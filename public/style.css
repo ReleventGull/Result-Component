@@ -1,0 +1,216 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(./woff/HankenGrotesk-Bold.woff)
+}
+
+
+:root {
+    --Light-red: 0, 100%, 67%;
+    --Orangey-yellow: 39, 100%, 56%;
+    --Green-teal: 166, 100%, 37%;
+    --Cobalt-blue: 234, 85%, 45%;
+    --light-slate-blue: 252, 100%, 67%;
+    --light-royal-blue: 241, 81%, 54%;
+    --violet-blue: 256, 72%, 46%, 1;
+    --persian-blue: 241, 72%, 46%, 0
+}
+#app {
+    height: 100%;
+    
+}
+.pageWrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.mainBox {
+    height: 700px;
+    width: 1000px;
+    display: flex;
+    color: white;
+    font-family: myFirstFont;
+}
+
+.leftBox {
+    width: 45%;
+    height: 100%; 
+    background-image: linear-gradient(hsl(var(--light-slate-blue)), hsl(var(--light-royal-blue)));
+    border-radius: 30px;
+    outline: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+.topBox {
+    width: 100%;
+    height: 15%;
+    color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middleBox {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cirlce {
+    background-image: linear-gradient(hsl(var(--violet-blue)), hsl(var(--persian-blue)));
+    width: 240px;
+    height: 240px;
+    border-radius: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.3em;
+    font-family: myFirstFont;
+}
+.yourscore {
+    margin: 0
+}
+.outof {
+    font-size: .6em;
+    color: rgba(211, 211, 211, 0.591)
+}
+
+.bottomBox {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description {
+    text-align: center;
+    width: 60%;
+    font-size: 1.3em;
+    color: rgba(211, 211, 211, 0.591)
+}
+.rating {
+    font-size: 2.5rem;
+    margin: 0
+}
+
+
+
+.rightBox {
+    position: relative;
+    right: 25px;
+    width: 55%;
+    height: 100%;
+    padding-left: 10px;
+    background-color: white;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 2px 2px 10px 0px hsl(var(--violet-blue));
+    outline: none;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightMiddle {
+    margin-left: 25px;
+    position: absolute;
+    height: 90%;
+    width: 80%;
+
+}
+
+.rightMiddleTop {
+    color: black;
+}
+.resultBox {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 8px;
+}
+
+.itemBox {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    height: 60px;
+    padding: 10px;
+    border-radius: 20px;
+    color: black;
+}
+.itemBox.Reaction {
+    background-color: hsl(var(--Light-red), 20%);
+    color: hsl(var(--Light-red))
+}
+.itemBox.Memory {
+    background-color: hsl(var(--Orangey-yellow), 10%);
+    color: hsl(var(--Orangey-yellow))
+}
+.itemBox.Verbal {
+    background-color: hsl(var(--Green-teal), 20%);
+    color: hsl(var(--Green-teal))
+}
+.itemBox.Visual {
+    background-color: hsl(var(--Cobalt-blue), 20%);
+    color: hsl(var(--Cobalt-blue))
+}
+.titleBox {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    gap: 15px
+}
+.titleBox h2 {
+    margin: 0;
+}
+
+.scoreBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.score {
+    margin: 0;
+    color: black;
+}
+.outOfScore {
+    color: rgb(128, 128, 128)
+}
+
+.buttonContainer {
+    display: flex;
+    height: 15%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonContainer button {
+    height: 70%;
+    border-radius: 500px;
+    width: 100%;
+    font-size: 2em;
+    outline: none;
+    border: none;
+    color: white;
+    background-image: linear-gradient(hsl(var(--light-slate-blue)), hsl(var(--light-royal-blue)));
+}
