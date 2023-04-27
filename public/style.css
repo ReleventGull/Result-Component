@@ -37,6 +37,8 @@ html, body {
     width: 1000px;
     display: flex;
     color: white;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px 0px hsl(var(--violet-blue));
     font-family: myFirstFont;
 }
 
@@ -68,25 +70,37 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
-.cirlce {
+.circle {
     background-image: linear-gradient(hsl(var(--violet-blue)), hsl(var(--persian-blue)));
-    width: 240px;
-    height: 240px;
-    border-radius: 500px;
+    width: 40%;
+    padding-bottom: 40%;
+    border-radius: 50%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 2.3em;
-    font-family: myFirstFont;
+    position: relative;
+}
+.circleText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .yourscore {
-    margin: 0
+    margin: 0; 
+    font-size: 3rem;
 }
+
+
 .outof {
-    font-size: .6em;
+    font-size: 1.3em;
     color: rgba(211, 211, 211, 0.591)
 }
 
@@ -118,9 +132,6 @@ html, body {
     height: 100%;
     padding-left: 10px;
     background-color: white;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    box-shadow: 2px 2px 10px 0px hsl(var(--violet-blue));
     outline: none;
     z-index: 99;
     display: flex;
@@ -213,4 +224,55 @@ html, body {
     border: none;
     color: white;
     background-image: linear-gradient(hsl(var(--light-slate-blue)), hsl(var(--light-royal-blue)));
+}
+
+@media (max-width: 991px) {
+    .mainBox {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        box-shadow: 0 0 0 0;
+    }
+    .leftBox {
+        height: 40%;
+        width: 100%;
+        border-radius: 0;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    .yourscore {
+        font-size: 1.5em;
+    }
+    .circle {
+        height: 120px;
+        width: 120px;
+        padding: 0;
+    }
+    .rightBox {
+        padding: 0;
+        right: 0;
+        width: 100%;
+    }
+    .rightMiddle {
+        margin: 0;
+        position: relative;
+        height: 100%;;
+        width: 95%
+    }
+    .itemBox {
+        padding: 5px;
+    }
+    .rating {
+        font-size: 1.5em;
+    }
+
+    .description {
+        margin: 0;
+        width: 90%;
+        font-size: 1rem;
+    }
+        
+    
+
 }
