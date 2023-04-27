@@ -36,9 +36,12 @@ const App = () => {
                     </div>
 
                     <div className="middleBox">
-                        <div className="cirlce">
-                            <h1 className="yourscore">76</h1>
-                            <span className="outof">of 100</span>
+                        <div className="circle">
+                            <div className="circleText">
+                                <h1 className="yourscore">76</h1>
+                                <span className="outof">of 100</span>
+                            </div>
+                 
                         </div>
                     </div>
                     
